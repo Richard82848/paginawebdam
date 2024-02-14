@@ -50,7 +50,7 @@ nav a:hover {
     height: 90vh; /* Ajusta la altura de la sección Home */
 }
 
-/* Estilos específicos para la sección "Servicio" */
+/* Estilos específicos para la sección Servicio */
 #servicio {
     color: black; /* Color del texto en la sección Servicio */
 }
@@ -168,50 +168,6 @@ h1 {
     max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
 }
 
-/* Estilos específicos para la sección "Más" */
-#mas {
-    padding-top: 50px; /* Ajusta según sea necesario para dejar espacio para el encabezado */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black; /* Color del texto en la sección "Más" */
-}
-
-#mas .imagen-texto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 50px; /* Espacio entre cada par de texto e imagen */
-    width: 80%; /* Ancho de la sección */
-}
-
-#mas .texto-imagen .texto,
-#mas .imagen-texto .texto {
-    width: 45%; /* Ancho del texto */
-    text-align: center; /* Centrar el texto */
-}
-
-#mas .texto-imagen .imagen,
-#mas .imagen-texto .imagen {
-    width: 45%; /* Ancho de la imagen */
-}
-
-#mas .texto-imagen {
-    flex-direction: row-reverse; /* Cambia el orden de los elementos */
-}
-
-#mas .texto,
-#mas .imagen {
-    width: 100%; /* Ajusta el ancho de texto e imagen */
-    text-align: center; /* Centra el texto */
-    margin-bottom: 20px; /* Espacio inferior */
-}
-
-#mas .imagen img {
-    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -263,4 +219,38 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+#pie {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociales li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociales li a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes-sociales li a:hover {
+    text-decoration: underline;
 }
