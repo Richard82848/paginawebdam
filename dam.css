@@ -1,19 +1,17 @@
-/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Estilos específicos para el menú */
 #cabeceramenu {
-    position: fixed; /* Hacer que el menú sea fijo */
-    top: 0; /* Fijar en la parte superior */
-    width: 100%; /* Ancho completo */
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #000000;
     overflow: hidden;
-    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
-    color: white; /* Color del texto del menú */
+    z-index: 1000;
+    color: white;
 }
 
 #logo {
@@ -30,7 +28,7 @@ nav {
 
 nav a {
     display: inline-block;
-    color: white; /* Color de los enlaces del menú */
+    color: white;
     text-align: center;
     padding: 1em;
     text-decoration: none;
@@ -38,7 +36,7 @@ nav a {
 
 nav a:hover {
     background-color: #ddd;
-    color: black; /* Color del texto al pasar el ratón sobre los enlaces */
+    color: black;
 }
 
 .fondo {
@@ -47,27 +45,30 @@ nav a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh; /* Ajusta la altura de la sección Home */
+    height: 90vh;
 }
 
-/* Estilos específicos para la sección Servicio */
 #servicio {
-    color: black; /* Color del texto en la sección Servicio */
+    color: black;
 }
 
 #home {
-    height: 100vh; /* Ajusta la altura de la sección Home */
+    height: 100vh;
 }
 
 #servicio {
-    position: relative; /* Cambia el posicionamiento a relativo */
-    padding-top: 50px; /* Ajusta según sea necesario para dejar espacio para el encabezado */
-    height: 100vh; /* Ajusta según sea necesario */
+    position: relative;
+    padding-top: 50px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: black;
+}
+
+.desserv {
+    padding-left: 5vh;
 }
 
 .cards-container {
@@ -76,19 +77,14 @@ nav a:hover {
 }
 
 .card {
-    width: 300px; /* Ancho fijo para las tarjetas */
-    height: 300px; /* Altura fija para las tarjetas */
-    background-color: #f5f5f5; /* Color de fondo */
-    margin: 0 10px; /* Espacio entre las tarjetas */
-
-    /* Estilo de sombra */
+    width: 300px;
+    height: 300px;
+    background-color: #f5f5f5;
+    margin: 0 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-    /* Bordes redondeados */
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
-/* Cambiar el color de fondo y la elevación al pasar el ratón */
 .card:hover {
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -96,7 +92,7 @@ nav a:hover {
 
 .card {
     width: 300px;
-    padding: 20px; /* Añadir margen interno */
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -112,7 +108,7 @@ nav a:hover {
 
 .card {
     width: 300px;
-    padding: 20px; /* Añadir margen interno */
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -125,11 +121,11 @@ h1 {
 }
 
 #proyectos {
-    padding-top: 50px; /* Ajusta según sea necesario para dejar espacio para el encabezado */
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black; /* Color del texto en la sección Proyectos */
+    color: black;
 }
 
 .texto-imagen,
@@ -138,34 +134,90 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 50px; /* Espacio entre cada par de texto e imagen */
-    width: 80%; /* Ancho de la sección */
+    margin-bottom: 50px;
+    width: 80%;
 }
 
 .texto-imagen .texto,
 .imagen-texto .texto {
-    width: 45%; /* Ancho del texto */
-    text-align: center; /* Centrar el texto */
+    width: 45%;
+    text-align: center;
 }
 
 .texto-imagen .imagen,
 .imagen-texto .imagen {
-    width: 45%; /* Ancho de la imagen */
+    width: 45%;
 }
 
 .texto-imagen {
-    flex-direction: row-reverse; /* Cambia el orden de los elementos */
+    flex-direction: row-reverse;
 }
 
 .texto,
 .imagen {
-    width: 100%; /* Ajusta el ancho de texto e imagen */
-    text-align: center; /* Centra el texto */
-    margin-bottom: 20px; /* Espacio inferior */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .imagen img {
-    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    max-width: 100%;
+}
+
+#mas {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.imagen {
+    display: inline-block;
+    border: 4px solid #3498db;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#mas .imagen-texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+#mas .texto-imagen .texto,
+#mas .imagen-texto .texto {
+    width: 45%;
+    text-align: center;
+}
+
+#mas .texto-imagen .imagen,
+#mas .imagen-texto .imagen {
+    width: 45%;
+}
+
+#mas .texto-imagen {
+    flex-direction: row-reverse;
+}
+
+#mas .texto,
+#mas .imagen {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#mas .imagen img {
+    max-width: 100%;
 }
 
 body {
@@ -205,7 +257,7 @@ input[type="submit"] {
 }
 
 select {
-    height: 40px; /* Ajustar la altura del select para que coincida con otros campos */
+    height: 40px;
 }
 
 input[type="submit"] {
@@ -219,38 +271,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
-}
-
-#pie {
-    background-color: #000000;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-}
-
-.contenido-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.redes-sociales {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.redes-sociales li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.redes-sociales li a {
-    color: white;
-    text-decoration: none;
-}
-
-.redes-sociales li a:hover {
-    text-decoration: underline;
 }
